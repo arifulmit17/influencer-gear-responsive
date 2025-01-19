@@ -25,6 +25,15 @@
   font-weight: 700;
   font-style: normal;
 }
+
+
+.roboto-small {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
 /* shared styles */
 body{
     
@@ -166,7 +175,6 @@ header{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
-    border: 2px solid blue;
   }
   .card{
     background-color: white;
@@ -192,9 +200,20 @@ header{
     padding: 0;
     color: rgba(0, 0, 0, 0.87);
   }
+  .star-rating{
+    display: flex;
+    justify-content: baseline;
+    gap: 5px;
+  }
+  .star{
+    color: gold;
+    fill: gold;
+  }
     .card-rating{
         padding: 0;
         margin: 0;
+        font-size: 1rem;
+        font-family: roboto;
     }
     .card-description{
         margin: 0;
@@ -274,5 +293,23 @@ header{
         width: 60%;
         height: 60%;
         grid-column: span 2;
+    }
+
+    /* card section */
+    .section-title{
+        font-size: 1rem;
+    }
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+    .card-title{
+        font-weight: 700;
+    }
+    .card-description{
+        font-weight: 500;
+    }
+    .card-image{
+        width: 300px;
+        height: 250px;
     }
   }
